@@ -61,7 +61,7 @@
                       </a>
                       <ul class="dropdown-menu">
                           <li class="nav-item">
-                              <a href="#" class="nav-link active"><a href="Controller?l=lop6.jsp" target="_blank">Lớp 6</a></a>
+                              <a class="nav-link active" href="Controller?l=lop6.jsp" target="_blank">Lớp 6</a>
                             </li>
                       
                           <li class="nav-item">
@@ -125,14 +125,15 @@
             <div class="row">
             
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <img src="images/lop6.png" alt="Tieng viet lop 6">
+                
+                <a href="Controller?l=lop6.jsp" target="_blank"><img src="images/lop6.png" alt="Tieng viet lop 6"></a>
             </div>
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3   ">
                     <h3>Tiếng Việt Lớp 6</h3>
                     Theo chương trình SGK 
                 </div>
                 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <img src="images/lop7.png" alt="Tieng viet lop 6">
+                        <a href="Controller?l=lop7.jsp" target="_blank"><img src="images/lop7.png" alt="Tieng viet lop 7"></a>
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3   ">
                         <h3>Tiếng Việt Lớp 7</h3>
@@ -144,14 +145,14 @@
             <div class="row">
             
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <img src="images/lop8.png" alt="Tieng viet lop 6">
+                         <a href="Controller?l=lop8.jsp" target="_blank"><img src="images/lop8.png" alt="Tieng viet lop 8"></a>
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3   ">
                             <h3>Tiếng Việt Lớp 6</h3>
                             Theo chương trình SGK 
                         </div>
                         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                <img src="images/lop9.png" alt="Tieng viet lop 6">
+                                 <a href="Controller?l=lop9.jsp" target="_blank"><img src="images/lop9.png" alt="Tieng viet lop 9"></a>
                             </div>
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3   ">
                                 <h3>Tiếng Việt Lớp 9</h3>

@@ -56,7 +56,7 @@
           </div>
           
         </div>
-      </div>
+     
        <!--end header-->
         <!--menu-->
       <div class="row" style="background-color: bisque;">
@@ -137,14 +137,14 @@
             %>    
                 <div class="row" >
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h3 style="margin-left:350px " >  
+                        <h3 style="margin-left:200px " >  
                          <%= sp.getTieuDe() %>
                         </h3>
                     </div>
                  </div>
                 <div class="row">
-                     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                         <%= sp.getMaDe() %>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"  >
+                        <h3 style="padding-top:90px;padding-left: 60px"><%= sp.getMaDe() %> </h3>  
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" >
                         <h3> <%= sp.getNoiDung() %></h3>
@@ -181,7 +181,8 @@
             %>     
       </section> 
       <!-- cau tra loi-->
-            
+      <section>
+          <br><br>
            <%
          
                 List<DapAn> lt = DapAnDB.getAll();
@@ -219,7 +220,7 @@
                 i++;
                 }
             %>   
-      <section>
+      
           
       </section>
     <!--end content-->

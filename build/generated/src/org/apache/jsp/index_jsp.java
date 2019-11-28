@@ -3,14 +3,8 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import database.DapAnDB;
-import model.DapAn;
-import java.util.List;
-import model.De;
-import database.DeDB;
-import model.DapAn;
 
-public final class lop6_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -47,12 +41,6 @@ public final class lop6_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
       out.write("\n");
       out.write("\n");
       out.write("\n");
@@ -114,7 +102,7 @@ public final class lop6_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                      </a>\n");
       out.write("                      <ul class=\"dropdown-menu\">\n");
       out.write("                          <li class=\"nav-item\">\n");
-      out.write("                              <a href=\"#\" class=\"nav-link active\">Lớp 6</a>\n");
+      out.write("                              <a href=\"#\" class=\"nav-link active\"><a href=\"Controller?l=lop6.jsp\" target=\"_blank\">Lớp 6</a></a>\n");
       out.write("                            </li>\n");
       out.write("                      \n");
       out.write("                          <li class=\"nav-item\">\n");
@@ -174,134 +162,47 @@ public final class lop6_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <!--begin content-->\n");
       out.write("      \n");
       out.write("      <section>\n");
-      out.write("          \n");
-      out.write("           ");
-
-         
-                List<De> list = DeDB.getAll();
-                for(De sp:list){
-            
-      out.write("    \n");
-      out.write("                <div class=\"row\" >\n");
-      out.write("                    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n");
-      out.write("                        <h3 style=\"margin-left:350px \" >  \n");
-      out.write("                         ");
-      out.print( sp.getTieuDe() );
-      out.write("\n");
-      out.write("                        </h3>\n");
-      out.write("                    </div>\n");
-      out.write("                 </div>\n");
-      out.write("                <div class=\"row\">\n");
-      out.write("                     <div class=\"col-xs-2 col-sm-2 col-md-2 col-lg-2\">\n");
-      out.write("                         ");
-      out.print( sp.getMaDe() );
-      out.write("\n");
-      out.write("                    </div>\n");
-      out.write("                    <div class=\"col-xs-8 col-sm-8 col-md-8 col-lg-8\" >\n");
-      out.write("                        <h3> ");
-      out.print( sp.getNoiDung() );
-      out.write("</h3>\n");
-      out.write("                        \n");
-      out.write("                    </div>\n");
-      out.write("                   \n");
-      out.write("                    <div class=\"col-xs-2 col-sm-2 col-md-2 col-lg-2\">\n");
+      out.write("        \n");
+      out.write("            <div class=\"row\">\n");
       out.write("            \n");
+      out.write("            <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3\">\n");
+      out.write("                <img src=\"images/lop6.png\" alt=\"Tieng viet lop 6\">\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3   \">\n");
+      out.write("                    <h3>Tiếng Việt Lớp 6</h3>\n");
+      out.write("                    Theo chương trình SGK \n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3\">\n");
+      out.write("                        <img src=\"images/lop7.png\" alt=\"Tieng viet lop 6\">\n");
       out.write("                    </div>\n");
-      out.write("                    \n");
-      out.write("                 </div>\n");
-      out.write("                <div class=\"row\">\n");
-      out.write("                    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\" >\n");
-      out.write("                        <b style=\"margin-left: 700px\"> ");
-      out.print( sp.getTacGia() );
-      out.write("</b>\n");
-      out.write("                       \n");
+      out.write("                    <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3   \">\n");
+      out.write("                        <h3>Tiếng Việt Lớp 7</h3>\n");
+      out.write("                        Theo chương trình SGK \n");
       out.write("                    </div>\n");
-      out.write("                 </div>\n");
-      out.write("                 <div class=\"row\">\n");
-      out.write("                     <div class=\"col-xs-2 col-sm-2 col-md-2 col-lg-2\">\n");
-      out.write("                        \n");
-      out.write("                    </div>\n");
-      out.write("                    <div class=\"col-xs-8 col-sm-8 col-md-8 col-lg-8\" >\n");
-      out.write("                        <b >");
-      out.print( sp.getChuThich() );
-      out.write("</b>\n");
-      out.write("                        \n");
-      out.write("                    </div>\n");
-      out.write("                   \n");
-      out.write("                    <div class=\"col-xs-2 col-sm-2 col-md-2 col-lg-2\">\n");
-      out.write("            \n");
-      out.write("                    </div>\n");
-      out.write("                    \n");
-      out.write("                 </div>\n");
-      out.write("            ");
-         
-                }
-            
-      out.write("     \n");
-      out.write("      </section> \n");
-      out.write("      <!-- cau tra loi-->\n");
-      out.write("            \n");
-      out.write("           ");
-
-         
-                List<DapAn> lt = DapAnDB.getAll();
-                int i=1;
-                for(DapAn da:lt){
-            
-      out.write("    \n");
-      out.write("                <div class=\"row\" >\n");
-      out.write("                    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n");
-      out.write("                        <h3 style=\"margin-left:270px\" />  \n");
-      out.write("                         ");
-      out.print( i+"/" );
-      out.write("\n");
-      out.write("                         ");
-      out.print( da.getCauHoi() );
-      out.write("\n");
-      out.write("                        </h3>\n");
-      out.write("                    </div>\n");
-      out.write("                    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n");
-      out.write("                        <h4 style=\"margin-left:350px \" > \n");
-      out.write("                            <input type=\"radio\" name=\"");
-      out.print( i );
-      out.write("\">\n");
-      out.write("                         ");
-      out.print( da.getTraLoi1() );
-      out.write("\n");
-      out.write("                        </h3>\n");
-      out.write("                    </div>\n");
-      out.write("                    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n");
-      out.write("                        <h4 style=\"margin-left:350px \" > \n");
-      out.write("                            <input type=\"radio\" name=\"");
-      out.print( i );
-      out.write("\">\n");
-      out.write("                         ");
-      out.print( da.getTraLoi2() );
-      out.write("\n");
-      out.write("                        </h4>\n");
-      out.write("                    </div>\n");
-      out.write("                        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n");
-      out.write("                        <h4 style=\"margin-left:350px \" > \n");
-      out.write("                            <input type=\"radio\" name=\"");
-      out.print( i );
-      out.write("\">\n");
-      out.write("                         ");
-      out.print( da.getTraLoi3() );
-      out.write("\n");
-      out.write("                        </h4>\n");
-      out.write("                    </div>\n");
-      out.write("                 </div>\n");
       out.write("                \n");
-      out.write("            ");
-   
-                i++;
-                }
-            
-      out.write("   \n");
-      out.write("      <section>\n");
-      out.write("          \n");
-      out.write("      </section>\n");
-      out.write("    <!--end content-->\n");
+      out.write("            \n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("            \n");
+      out.write("                    <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3\">\n");
+      out.write("                        <img src=\"images/lop8.png\" alt=\"Tieng viet lop 6\">\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3   \">\n");
+      out.write("                            <h3>Tiếng Việt Lớp 6</h3>\n");
+      out.write("                            Theo chương trình SGK \n");
+      out.write("                        </div>\n");
+      out.write("                        <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3\">\n");
+      out.write("                                <img src=\"images/lop9.png\" alt=\"Tieng viet lop 6\">\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3   \">\n");
+      out.write("                                <h3>Tiếng Việt Lớp 9</h3>\n");
+      out.write("                                Theo chương trình SGK \n");
+      out.write("                            </div>\n");
+      out.write("                        \n");
+      out.write("                    \n");
+      out.write("                    </div>\n");
+      out.write("            \n");
+      out.write("      </section> \n");
       out.write("      <footer  style=\"background-color:darkkhaki\">\n");
       out.write("          \n");
       out.write("            \n");
