@@ -61,7 +61,7 @@
                       </a>
                       <ul class="dropdown-menu">
                           <li class="nav-item">
-                              <a class="nav-link active" href="Controller?l=lop6.jsp" target="_blank">Lớp 6</a>
+                              <a class="nav-link active" href="Controller?x=lop6.jsp" target="_blank">Lớp 6</a>
                             </li>
                       
                           <li class="nav-item">

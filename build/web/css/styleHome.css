@@ -1,0 +1,31 @@
+#container{  
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+#menu{
+    margin: 0px;
+    padding: 0px;
+    width: 15%;
+    float: left;
+    background-color:  #eb9316;
+}
+#content{
+    margin: 0px;
+    padding: 0px;
+    width: 85%;
+    float: right;
+    background-color: lavenderblush;
+    
+}
+#clear{
+    clear: both 
+}
+#footer{
+   width: 100%;
+}
+.space{
+    padding-left: 20px;
+    padding-right:10px;
+    align-content: center;
+}
