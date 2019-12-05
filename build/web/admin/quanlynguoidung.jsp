@@ -26,7 +26,7 @@
             <div>
                 <div id="menu" >
                     <div>
-                        <a href="#" >Quản Lý Người Dùng Quản Lý Người Dùng</a>
+                        <a href="#" >Quản Lý Người Dùng</a>
                     </div>
                     <div>
                         <a href="#" >Quản Lý Đề Bài</a>
@@ -42,6 +42,11 @@
                     <div style="font-size: 30px;font-family: monospace;padding-left: 100px"> Danh Sách Người Dùng </div>
                     <br>
                     <%
+                        if(request.getParameter("txtHidden")!=null){
+                            String useName=request.getParameter("txtHidden");
+                            NguoiDungDB ndDB=new  NguoiDungDB();
+                            ndDB.delete(useName);
+                        }
                         
                       try {     
                                 if(request.getParameter("txtUN")!=null){
@@ -69,7 +74,7 @@
                     <form action="quanlynguoidung.jsp" method="GET">
                         
 
-                        <table style="margin-left: 150px;"> 
+                        <table id="myDIV"  > 
                              <tr>
                                 <td >user id</td>
                                 <td ><input type="text" id="txtUse" name="txtUN"> </td>
@@ -101,8 +106,8 @@
                                 <td >Email  </td><td ><input type="text"id="txtEM" name="txtEM"></td>
                             </tr> 
                            <tr>
-                               <td  ><input type="submit"  value="CapNhap" ></td>
-                               <td > <input type="button" value="Reset"></td>
+                               <td  colspan="2"><input type="submit"  value="CapNhap" ></td>
+                               
                             </tr> 
                         </table>
                     </form>
@@ -158,7 +163,11 @@
                             <p class="<%= i%>"> <%=nd.getEmail() %></p>
                         </td>
                         <td> <input type="button" value="Cap Nhap" onclick="xuLyCapNhap(<%=i %>)" > </td>
-                        <td> <input type="button" onclick="xuLyXoa(<%=i %>)" ></td>
+                        <td><form action="quanlynguoidung.jsp">
+                                <input type="hidden" name="txtHidden" value="<%= nd.getUseName() %>" />
+                                <input type="submit" value="Xoa" name="action"/>
+                            </form>
+                        </td>
                      
                     </tr>
                      <%

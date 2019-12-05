@@ -139,4 +139,17 @@ public class NguoiDungDB {
            e.printStackTrace();
        }
    }
+     public  void delete(String code) throws ClassNotFoundException {
+       Connection con=Util.getConnection();
+       String sql="delete from nguoidung where useName=?";
+       try {
+           PreparedStatement ps=con.prepareStatement(sql);
+           
+              ps.setString(1,code);
+              ps.executeUpdate();
+              ps.close();
+       } catch (Exception e) {
+           e.printStackTrace();
+       }
+   }
 }

@@ -2,7 +2,8 @@ var so=31;
 var soCauDung=0;
 var soCauHoi=10;
 
-function hamdautien(chuoi,z){
+function hamdautien(chuoi,z,i){
+    
     alert("id la="+chuoi+"z="+z);
     var obj =document.getElementById(chuoi);
     var content =obj.value;
@@ -23,6 +24,12 @@ function hamdautien(chuoi,z){
         xxx.innerHTML="dap an dung la"+da2;
     }
    yyy.innerHTML="so dap an dung tren tong so cau la "+soCauDung+"/"+soCauHoi;
+   var data=document.getElementsByName(i);
+    alert(data.length+"so pt");
+    for(var x=0;x<data.length;x++){
+        data[x].disabled=true;
+    }
+   
 }
 // goi ham DONG HO 
 
@@ -40,4 +47,10 @@ function  demNguoc(){
     }
     
     
+}
+function xyly_An(){
+    alert("ok chay");
+    //document.getElementById("vd1").disabled=true;
+    var obj=document.getElementsByName("xxx");
+    obj[0].disabled=true;
 }

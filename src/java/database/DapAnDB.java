@@ -18,7 +18,7 @@ import model.De;
 public class DapAnDB {
     //ham lay toan bo du lieu
     public static  List<DapAn> getAll() throws SQLException{
-        String sql="select * from dapan";
+        String sql="select * from dapan ORDER BY MaDe,MaDapAn";
         List<DapAn> list=null;
         try {
             list=new ArrayList<DapAn>();
@@ -51,6 +51,59 @@ public class DapAnDB {
         }
             return list;
         
+    }
+    public static void update(String maDe,int maDapAn, String cauHoi, String traLoi1, String traLoi2, String traLoi3,String dapAn) throws ClassNotFoundException {
+        Connection con = Util.getConnection();
+        String sql = "update dapan set CauHoi=?,TraLoi1=?,TraLoi2=?,TraLoi3=?,DapAn=?  where MaDe=? and MaDapAn=?";
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, cauHoi);
+            ps.setString(2, traLoi1);
+            ps.setString(3, traLoi2);
+            ps.setString(4, traLoi3);
+            ps.setString(5, dapAn);
+            ps.setString(6,maDe);
+            ps.setInt(7,maDapAn);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    // ham delete
+
+    public void delete(String maDe,int maDapAn) throws ClassNotFoundException {
+        Connection con = Util.getConnection();
+        String sql = "delete from dapan where MaDe=? and MaDapAn=?";
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, maDe);
+             ps.setInt(2,maDapAn);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    // ham insert
+    public void insert(String maDe,int maDapAn, String cauHoi, String traLoi1, String traLoi2, String traLoi3,String dapAn) throws ClassNotFoundException {
+        Connection con = Util.getConnection();
+        String sql = "insert into dapan values(?,?,?,?,?,?,?)";
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(2,maDapAn);
+            ps.setString(3,cauHoi);
+            ps.setString(4, traLoi1);
+            ps.setString(5, traLoi2);
+            ps.setString(6, traLoi3);
+            ps.setString(7, dapAn);
+            ps.setString(1, maDe);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
    
 }

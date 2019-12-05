@@ -38,17 +38,18 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <img src="images/logo.png" />
+                
+                <a href="index.jsp"><img src="images/logo.png" /></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:40px ">
                 
-                <h1 style="font-family: fantasy ;font-size:45px; padding-left:100px"> Ôn Tập Tiếng Việt 6-7-8-9</h1>
 
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding-top:60px ">
-                <button type="button" class="btn btn-info">Đăng Nhập</button>
-            
-                <button type="button" class="btn btn-danger">Đăng Ký</button>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding-top:60px;padding-left:160px  ">
+                <a href="dangky.jsp"><button type="button" class="btn btn-info">Đăng Ký</button></a>
+                
+                <a href="dangnhap.jsp"><button type="button" class="btn btn-danger">Đăng Nhập</button></a>
+                
             </div>
             
             
@@ -64,6 +65,9 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="container">
                 <ul class="nav nav-tabs" >  
+                    <li class="nav-item">
+                      <a href="index.jsp" class="nav-link active">Trang Chủ</a>
+                    </li>
                     <li role="presentation" class="dropdown">
                       <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         Lớp Học<span class="caret"></span>
@@ -224,7 +228,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <h4 style="margin-left:350px " > 
-                            <input onclick="hamdautien('<%= id %>','<%= z %>')" type="radio" value="<%= "A,"+da.getDapAn() %>" name="<%= i %>"  id="<%= id %>">
+                            <input  onclick="hamdautien('<%= id %>','<%= z %>','<%= i %>')" type="radio" value="<%= "A,"+da.getDapAn() %>" name="<%= i %>"  id="<%= id %>">
                          <% id++; %>
                             
                             <%= da.getTraLoi1() %>
@@ -233,20 +237,21 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <h4 style="margin-left:350px " > 
-                            <input onclick="hamdautien('<%= id %>','<%= z %>')" type="radio" value="<%= "B,"+da.getDapAn() %>" name="<%= i %>"  id="<%= id %>">
+                            <input onclick="hamdautien('<%= id %>','<%= z %>','<%= i %>')" type="radio" value="<%= "B,"+da.getDapAn() %>" name="<%= i %>"  id="<%= id %>">
                             <% id++; %>
                             <%= da.getTraLoi2() %>
                         </h4>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <h4 style="margin-left:350px " > 
-                            <input onclick="hamdautien('<%= id %>','<%= z %>')" type="radio" value="<%= "C,"+da.getDapAn() %>" name="<%= i %>"  id="<%= id %>">
+                            <input onclick="hamdautien('<%= id %>','<%= z %>','<%= i %>')" type="radio" value="<%= "C,"+da.getDapAn() %>" name="<%= i %>"  id="<%= id %>">
                             <% id++; %>
                             <%= da.getTraLoi3() %>
                         </h4>
                         <em id="<%= z %>" style="margin-left:300px ; color: red"> </em>
                          <% z++; %>
                     </div>
+                   
                                                   
                         
                         
@@ -256,8 +261,10 @@
                 i++;
                 }
             %>   
-      
-          
+            <div >
+                <input type="text"  id="vd1" name="xxx" value="okok"  >
+                <input type="button" onclick="xyly_An()">
+            </div>
       </section>
     <!--end content-->
       <footer  style="background-color:darkkhaki">

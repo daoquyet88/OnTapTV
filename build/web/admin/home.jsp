@@ -22,10 +22,12 @@
             <div>
                 <div id="menu" style=" background-color: #419641">
                     <div>
-                        <a href="#" >Quản Lý Người Dùng Quản Lý Người Dùng</a>
+                        <a href="quanlynguoidung.jsp">Quản Lý Người Dùng </a>
+                       
                     </div>
                     <div>
-                        <a href="#" >Quản Lý Đề Bài</a>
+                        <a href="quanlydebai.jsp">Quản Lý Đề Bài</a>
+                        
                     </div>
                     <div>
                         <a href="#" >Quản Lý Đáp Án</a>

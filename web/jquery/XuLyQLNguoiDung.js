@@ -1,4 +1,6 @@
 function xuLyCapNhap(id){
+    document.getElementById("myDIV").style.display = "block";
+    
     alert(id);
     var objs=document.getElementsByClassName(id);
     document.getElementById("txtUse").value=objs[0].innerHTML;

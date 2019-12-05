@@ -29,3 +29,7 @@
     padding-right:10px;
     align-content: center;
 }
+#myDIV{
+   margin-left: 150px;
+   display:none;
+}
