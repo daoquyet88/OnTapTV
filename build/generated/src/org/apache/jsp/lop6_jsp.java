@@ -380,10 +380,7 @@ public final class lop6_jsp extends org.apache.jasper.runtime.HttpJspBase
                 }
             
       out.write("   \n");
-      out.write("            <div >\n");
-      out.write("                <input type=\"text\"  id=\"vd1\" name=\"xxx\" value=\"okok\"  >\n");
-      out.write("                <input type=\"button\" onclick=\"xyly_An()\">\n");
-      out.write("            </div>\n");
+      out.write("            \n");
       out.write("      </section>\n");
       out.write("    <!--end content-->\n");
       out.write("      <footer  style=\"background-color:darkkhaki\">\n");

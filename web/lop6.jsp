@@ -261,10 +261,7 @@
                 i++;
                 }
             %>   
-            <div >
-                <input type="text"  id="vd1" name="xxx" value="okok"  >
-                <input type="button" onclick="xyly_An()">
-            </div>
+            
       </section>
     <!--end content-->
       <footer  style="background-color:darkkhaki">

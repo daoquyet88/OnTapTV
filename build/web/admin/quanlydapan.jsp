@@ -35,7 +35,7 @@
                         <a href="quanlydebai.jsp">Quản Lý Đề Bài</a>                        
                     </div>
                     <div>
-                        <a href="#" >Quản Lý Đáp Án</a>
+                        <a href="quanlydapan.jsp" >Quản Lý Đáp Án</a>
                     </div>
                     <div>
                         <a href="#" >Quản Lý Bài Làm</a>

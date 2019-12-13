@@ -26,7 +26,8 @@
             <div>
                 <div id="menu" >
                     <div>
-                        <a href="#" >Quản Lý Người Dùng</a>
+                        <a href="quanlynguoidung.jsp">Quản Lý Người Dùng</a>
+                      
                     </div>
                     <div>
                         <a href="#" >Quản Lý Đề Bài</a>
