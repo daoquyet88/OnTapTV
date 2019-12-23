@@ -14,31 +14,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-       <link href="../css/styleHome.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styleHome.css" rel="stylesheet" type="text/css"/>
+       <link href="css/styleHome.css" rel="stylesheet" type="text/css"/>
     </head>
     
     <body>
         <div id="container">
-            <div style="height: 150px; background-color:  #1b6d85">
-                <div colspan="2"> Trang admin</div>
-            </div>
-            <!-- begin noi dung-->
-            <div>
-                <div id="menu" >
-                    <div>
-                        <a href="quanlynguoidung.jsp">Quản Lý Người Dùng</a>
-                      
-                    </div>
-                    <div>
-                        <a href="#" >Quản Lý Đề Bài</a>
-                    </div>
-                    <div>
-                        <a href="#" >Quản Lý Đáp Án</a>
-                    </div>
-                    <div>
-                        <a href="#" >Quản Lý Bài Làm</a>
-                    </div>
-                </div>
+             <!--header-->
+            <jsp:include page="page/header.jsp"/>
+            <!--end header-->
+            
+            <!--begin menu-->
+            <jsp:include page="page/menu.jsp"/>
+            <!--end begin-->
+            
                 <div id="content">
                     <div style="font-size: 30px;font-family: monospace;padding-left: 100px"> Danh Sách Người Dùng </div>
                     <br>
@@ -180,12 +169,12 @@
             </div>
             <!-- end noi dung-->
             <div id="clear">
-                
+
             </div>
-            <div id="footer" style="height: 100px;background-color: #1b6d85">
-                <div > footer</div>
-            </div>
+            <!--header-->
+            <jsp:include page="page/footer.jsp"/>
+            <!--end header-->
         </div>
-         <script src="../jquery/XuLyQLNguoiDung.js" type="text/javascript"></script>
+         <script src="jquery/XuLyQLNguoiDung.js" type="text/javascript"></script>
     </body>
 </html>

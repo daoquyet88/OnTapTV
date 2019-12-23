@@ -2,6 +2,7 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -27,8 +28,23 @@ public class Controller extends HttpServlet {
             out.println("<h1>Servlet Controller at " + request.getContextPath() + "</h1>");
           
             String str=request.getParameter("x");
+            
             if(str.equals("lop6.jsp")){
-                request.getRequestDispatcher("lop6.jsp").forward(request, response);
+                
+               request.getRequestDispatcher("lop6.jsp").forward(request, response);
+            }
+            if(str.equals("GiuaKyI.jsp")){
+                
+                request.getRequestDispatcher("GiuaKyI.jsp").forward(request, response);
+             }
+            if(str.equals("Lop 6")){
+                request.setAttribute("lop",str);    
+                RequestDispatcher rd=request.getRequestDispatcher("GiuaKyI.jsp");
+                rd.forward(request, response);
+            }
+            if(str.equals("logout")){
+               
+                request.getRequestDispatcher("admin/quanlynguoidung.jsp").forward(request, response);
             }
             
             out.println("</body>");

@@ -62,6 +62,7 @@
 
 
                 </div>
+                 <br><br>
                 <div class="row">
 
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -72,7 +73,7 @@
                         Theo chương trình SGK 
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <a href="Controller?x=lop6.jsp" target="_blank"><img src="images/lop9.png" alt="Tieng viet lop 9"></a>
+                        <a href="lop6.jsp" target="_blank"><img src="images/lop9.png" alt="Tieng viet lop 9"></a>
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3   ">
                         <h3>Tiếng Việt Lớp 9</h3>

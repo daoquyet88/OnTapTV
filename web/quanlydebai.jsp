@@ -14,32 +14,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link href="../css/styleHome.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styleHome.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
         <div id="container">
-            <div style="height: 150px; background-color:  #1b6d85">
-                <div colspan="2"> Trang admin</div>
-            </div>
-            <!-- begin noi dung-->
-            <div>
-                <div id="menu" style=" background-color: #419641">
-                    <div>
-                        <a href="quanlynguoidung.jsp">Quản Lý Người Dùng</a>
-
-                    </div>
-                    <div>
-                        <a href="quanlydebai.jsp">Quản Lý Đề Bài</a>                        
-                    </div>
-                    <div>
-                        <a href="quanlydapan.jsp">Quản Lý Đáp Án</a>
-                       
-                    </div>
-                    <div>
-                        <a href="#" >Quản Lý Bài Làm</a>
-                    </div>
-                </div>
+            <!--header-->
+            <jsp:include page="page/header.jsp"/>
+            <!--end header-->
+            
+            <!--begin menu-->
+            <jsp:include page="page/menu.jsp"/>
+            <!--end menu-->
                 <div id="content">
                     <div>
                         <input value="Thêm Đề bài" type="button" id="btnThemDT" onclick="xuly_ThemDeTai()">
@@ -201,6 +187,6 @@
                 <div > footer</div>
             </div>
         </div>
-        <script src="../jquery/xylydebai.js" type="text/javascript"></script>
+        <script src="jquery/xylydebai.js" type="text/javascript"></script>
     </body>
 </html>

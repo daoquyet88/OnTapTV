@@ -1,10 +1,10 @@
-package org.apache.jsp.admin;
+package org.apache.jsp;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class quanlybailam_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -49,32 +49,23 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>JSP Page</title>\n");
-      out.write("       <link href=\"../css/styleHome.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
+      out.write("       <link href=\"css/styleHome.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
       out.write("    </head>\n");
       out.write("    \n");
       out.write("    <body>\n");
       out.write("        <div id=\"container\">\n");
-      out.write("            <div style=\"height: 150px; background-color:  #1b6d85\">\n");
-      out.write("                <div colspan=\"2\"> Trang admin</div>\n");
-      out.write("            </div>\n");
-      out.write("            <!-- begin noi dung-->\n");
-      out.write("            <div>\n");
-      out.write("                <div id=\"menu\" style=\" background-color: #419641\">\n");
-      out.write("                    <div>\n");
-      out.write("                        <a href=\"quanlynguoidung.jsp\">Quản Lý Người Dùng </a>\n");
-      out.write("                       \n");
-      out.write("                    </div>\n");
-      out.write("                    <div>\n");
-      out.write("                        <a href=\"quanlydebai.jsp\">Quản Lý Đề Bài</a>\n");
-      out.write("                        \n");
-      out.write("                    </div>\n");
-      out.write("                    <div>\n");
-      out.write("                        <a href=\"#\" >Quản Lý Đáp Án</a>\n");
-      out.write("                    </div>\n");
-      out.write("                    <div>\n");
-      out.write("                        <a href=\"#\" >Quản Lý Bài Làm</a>\n");
-      out.write("                    </div>\n");
-      out.write("                </div>\n");
+      out.write("            <!--header-->\n");
+      out.write("            ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "page/header.jsp", out, false);
+      out.write("\n");
+      out.write("            <!--end header-->\n");
+      out.write("            \n");
+      out.write("            <!--begin menu-->\n");
+      out.write("            ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "page/menu.jsp", out, false);
+      out.write("\n");
+      out.write("            <!--end menu-->\n");
+      out.write("            \n");
       out.write("                <div id=\"content\" style=\" background-color: #ebebeb\">\n");
       out.write("                    content\n");
       out.write("                </div>\n");

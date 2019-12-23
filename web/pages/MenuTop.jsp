@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<div class="row" style="background-color: bisque;">
+<div class="row" style="background-color: #f5e79e;">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="container">
             <ul class="nav nav-tabs" > 
@@ -41,7 +41,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li class="nav-item">
-                            <a href="Controller?x=lop6.jsp" class="nav-link active">Giữ HK I</a>
+                            <a href="Controller?x=GiuaKyI.jsp" class="nav-link active">Giữ HK I</a>
                         </li>
 
                         <li class="nav-item">

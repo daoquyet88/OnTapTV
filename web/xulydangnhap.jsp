@@ -17,6 +17,8 @@
     <body>
         <h1>Hello World! xu ly dang nhap</h1>
         <% 
+            //HttpSession session=request.getSession();
+            
             String use=request.getParameter("txtTen");
             String pass=request.getParameter("txtPass");
             List<NguoiDung> user=NguoiDungDB.layMotNguoi(use, pass);
@@ -25,9 +27,11 @@
                 for(NguoiDung nd : user){
                     String id=nd.getId();
                     String useName=nd.getUseName();
+                    session.setAttribute("ten",useName);
+                    session.setAttribute("ad",id);
                     if(id.equals("1")){
 
-                        request.getRequestDispatcher("admin/home.jsp").forward(request, response);
+                        request.getRequestDispatcher("quanlynguoidung.jsp").forward(request, response);
                     }else if(id.equals("2")){                         
                                request.getRequestDispatcher("index.jsp").forward(request, response);
                     }

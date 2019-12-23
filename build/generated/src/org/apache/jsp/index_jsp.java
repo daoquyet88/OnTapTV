@@ -105,6 +105,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("                </div>\n");
+      out.write("                 <br><br>\n");
       out.write("                <div class=\"row\">\n");
       out.write("\n");
       out.write("                    <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3\">\n");
@@ -115,7 +116,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        Theo chương trình SGK \n");
       out.write("                    </div>\n");
       out.write("                    <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3\">\n");
-      out.write("                        <a href=\"Controller?x=lop6.jsp\" target=\"_blank\"><img src=\"images/lop9.png\" alt=\"Tieng viet lop 9\"></a>\n");
+      out.write("                        <a href=\"lop6.jsp\" target=\"_blank\"><img src=\"images/lop9.png\" alt=\"Tieng viet lop 9\"></a>\n");
       out.write("                    </div>\n");
       out.write("                    <div class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3   \">\n");
       out.write("                        <h3>Tiếng Việt Lớp 9</h3>\n");
